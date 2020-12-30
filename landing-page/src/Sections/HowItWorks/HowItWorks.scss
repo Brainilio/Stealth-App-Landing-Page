@@ -1,3 +1,32 @@
 @import "../../Styles/breakpoints.scss";
 @import "../../Styles/colors.scss";
 @import "../../Styles/fontsizes.scss";
+
+.how-it-works {
+	margin-top: 20em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		font-size: $title;
+	}
+
+	p {
+		text-align: center;
+		width: 40%;
+		font-size: $subheading;
+	}
+
+	span {
+		font-size: $subheading;
+	}
+
+	.how-it-works-group {
+		z-index: -1;
+		margin-top: -25em;
+		transform: translateY(30%);
+		width: 650px;
+	}
+}

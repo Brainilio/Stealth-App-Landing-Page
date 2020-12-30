@@ -1,10 +1,13 @@
 import React from "react"
 import "./About.scss"
+import { ReactComponent as LadyKneeling } from "../../Media/Svgs/lady-kneeling.svg"
 
 const About = () => {
 	return (
 		<section className="about">
-			<div className="about-image"></div>
+			<div className="about-image">
+				<LadyKneeling className="lady-kneeling" />
+			</div>
 			<div className="about-text">
 				<h1>About</h1>
 				<p>

@@ -1,3 +1,26 @@
 @import "../../Styles/breakpoints.scss";
 @import "../../Styles/colors.scss";
 @import "../../Styles/fontsizes.scss";
+
+.video-wrapper {
+	.video-border {
+		z-index: -1;
+		position: absolute;
+		width: 500px;
+		transform: translateY(-125px) translateX(-20px);
+		height: 600px;
+	}
+
+	.video-placer-border {
+		width: 480px;
+		transform: translateY(-90px) translateX(-15px);
+		height: 550px;
+		position: absolute;
+	}
+	video {
+		border-radius: 20px;
+		width: 450px;
+		height: 375px;
+		object-fit: cover;
+	}
+}

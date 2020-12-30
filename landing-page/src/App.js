@@ -13,10 +13,10 @@ import Why from "./Sections/Why/Why"
 function App() {
 	return (
 		<>
-			<header>
+			{/* <header>
 				<Navbar />
 				<Sidedrawer />
-			</header>
+			</header> */}
 			<main>
 				<Landing />
 				<About />

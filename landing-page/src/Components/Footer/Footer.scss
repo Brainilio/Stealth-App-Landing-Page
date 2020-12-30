@@ -1,3 +1,10 @@
 @import "../../Styles/breakpoints.scss";
 @import "../../Styles/colors.scss";
 @import "../../Styles/fontsizes.scss";
+
+footer {
+	text-align: center;
+	span {
+		text-align: center;
+	}
+}

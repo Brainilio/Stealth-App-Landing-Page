@@ -1,3 +1,69 @@
 @import "../../Styles/breakpoints.scss";
 @import "../../Styles/colors.scss";
 @import "../../Styles/fontsizes.scss";
+
+.product {
+	margin-top: 5em;
+	margin-bottom: 15em;
+	position: relative;
+	overflow-y: hidden;
+
+	.product-title {
+		text-align: center;
+		h1 {
+			font-size: $title;
+		}
+		h2 {
+			font-size: $heading;
+		}
+	}
+
+	.product-display {
+		margin-top: 10em;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		position: relative;
+
+		.product-itself {
+			.product-itself-guy {
+				width: 350px;
+			}
+
+			.cloud1 {
+				position: absolute;
+				transform: translateX(-500px);
+			}
+			.cloud2 {
+				position: absolute;
+				transform: translateX(120px) translateY(50px);
+			}
+			.cloud3 {
+				position: absolute;
+				transform: translateX(20px) translateY(350px);
+			}
+		}
+
+		.product-container {
+			border-radius: 20px;
+			width: 350px;
+			height: 500px;
+			background-color: #c7efdb;
+			display: flex;
+			flex-direction: column;
+			// justify-content: center;
+			align-items: center;
+
+			.product-container-image {
+				transform: translateY(100%) translateX(-50%);
+			}
+		}
+	}
+	.blob-left-2 {
+		z-index: -1;
+		width: 600px;
+		position: absolute;
+		left: -20%;
+		top: -100%;
+	}
+}

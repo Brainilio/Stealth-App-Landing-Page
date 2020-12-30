@@ -1,5 +1,9 @@
 import React from "react"
 import "./Product.scss"
+import { ReactComponent as Blob } from "../../Media/Svgs/blob-left-2.svg"
+import { ReactComponent as CloudOne } from "../../Media/Svgs/cloud.svg"
+import { ReactComponent as ProductDisplay } from "../../Media/Svgs/guy-looking-at-app.svg"
+import { ReactComponent as Buildings } from "../../Media/Svgs/buildings.svg"
 
 const Product = () => {
 	return (
@@ -10,7 +14,12 @@ const Product = () => {
 			</div>
 
 			<div className="product-display">
-				<div>Product image here</div>
+				<div className="product-itself">
+					<ProductDisplay className="product-itself-guy" />
+					<CloudOne className="cloud1" />
+					<CloudOne className="cloud2" />
+					<CloudOne className="cloud3" />
+				</div>
 				<div className="product-container">
 					<span>Sorry for the wait!</span>
 					<p>
@@ -19,9 +28,12 @@ const Product = () => {
 						updates!
 					</p>
 					<button>Subscribe</button>
-					<div className="product-container-image">Image here</div>
+
+					<Buildings className="product-container-image" />
 				</div>
 			</div>
+
+			<Blob className="blob-left-2" />
 		</section>
 	)
 }

@@ -4,7 +4,7 @@ import "./TeamMember.scss"
 const TeamMember = () => {
 	return (
 		<div className="team-member">
-			<div>Image</div>
+			<div></div>
 			<span>Person name</span>
 			<span>Role</span>
 		</div>

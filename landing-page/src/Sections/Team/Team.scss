@@ -1,3 +1,19 @@
 @import "../../Styles/breakpoints.scss";
 @import "../../Styles/colors.scss";
 @import "../../Styles/fontsizes.scss";
+
+.team {
+	margin-top: 25em;
+
+	h1 {
+		font-size: $title;
+		text-align: center;
+	}
+
+	.team-wrapper {
+		margin-top: 10em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

@@ -1,3 +1,24 @@
 @import "../../Styles/breakpoints.scss";
 @import "../../Styles/colors.scss";
 @import "../../Styles/fontsizes.scss";
+
+.look {
+	margin-top: 30em;
+	display: flex;
+	position: relative;
+	align-items: flex-start;
+	justify-content: space-evenly;
+
+	div {
+		h1 {
+			font-size: $title;
+		}
+	}
+
+	.teacher {
+		position: absolute;
+		right: 20%;
+		top: 30%;
+		width: 300px;
+	}
+}
