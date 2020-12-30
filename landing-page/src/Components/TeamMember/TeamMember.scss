@@ -17,10 +17,10 @@
 
 	span:nth-child(2) {
 		margin-top: 1em;
-		font-size: 30px;
+		font-size: $heading;
 	}
 
 	span:nth-child(3) {
-		font-size: 25px;
+		font-size: $subheading;
 	}
 }

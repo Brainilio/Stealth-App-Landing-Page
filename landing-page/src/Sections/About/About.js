@@ -5,9 +5,8 @@ import { ReactComponent as LadyKneeling } from "../../Media/Svgs/lady-kneeling.s
 const About = () => {
 	return (
 		<section className="about">
-			<div className="about-image">
-				<LadyKneeling className="lady-kneeling" />
-			</div>
+			<LadyKneeling className="lady-kneeling" />
+
 			<div className="about-text">
 				<h1>About</h1>
 				<p>

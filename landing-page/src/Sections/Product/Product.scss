@@ -51,14 +51,30 @@
 			background-color: #c7efdb;
 			display: flex;
 			flex-direction: column;
-			// justify-content: center;
+
 			align-items: center;
 
+			span {
+				margin-top: 1em;
+				font-size: $subheading;
+			}
+
+			p {
+				margin-top: 5em;
+				width: 80%;
+				font-size: $body2;
+				text-align: center;
+				margin-bottom: 5em;
+			}
+
 			.product-container-image {
-				transform: translateY(100%) translateX(-50%);
+				position: absolute;
+				width: 200px;
+				transform: translateY(150%) translateX(-80%);
 			}
 		}
 	}
+
 	.blob-left-2 {
 		z-index: -1;
 		width: 600px;

@@ -5,21 +5,22 @@
 .about {
 	margin-top: 35em;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 
-	.about-image {
-		.lady-kneeling {
-			width: 450px;
-		}
+	.lady-kneeling {
+		width: 450px;
+		margin-left: 10em;
 	}
 
 	.about-text {
+		width: 45%;
 		h1 {
 			font-size: $title;
 		}
+
 		p {
 			font-size: $body2;
-			width: 55%;
+			width: 80%;
 		}
 	}
 }
