@@ -3,10 +3,17 @@
 @import "../../Styles/fontsizes.scss";
 
 .landing {
+	width: 100vw;
 	margin-top: 8em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@include screenxs {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
 	.landing-text {
 		h1 {
@@ -22,6 +29,10 @@
 	.landing-image {
 		.landing-image-lady {
 			width: 500px;
+
+			@include screenxs {
+				width: 350px;
+			}
 		}
 	}
 
@@ -31,5 +42,9 @@
 		position: absolute;
 		right: -25%;
 		top: -150px;
+
+		@include screenxs {
+			display: none;
+		}
 	}
 }

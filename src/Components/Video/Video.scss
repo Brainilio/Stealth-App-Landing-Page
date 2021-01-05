@@ -9,6 +9,11 @@
 		width: 500px;
 		transform: translateY(-125px) translateX(-20px);
 		height: 600px;
+
+		@include screenxs {
+			width: 400px;
+			height: 500px;
+		}
 	}
 
 	.video-placer-border {
@@ -16,11 +21,20 @@
 		transform: translateY(-90px) translateX(-15px);
 		height: 550px;
 		position: absolute;
+
+		@include screenxs {
+			display: none;
+		}
 	}
 	video {
 		border-radius: 20px;
 		width: 450px;
 		height: 375px;
 		object-fit: cover;
+
+		@include screenxs {
+			width: 350px;
+			height: 275px;
+		}
 	}
 }

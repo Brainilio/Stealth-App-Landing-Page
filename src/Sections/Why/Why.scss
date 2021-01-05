@@ -11,6 +11,10 @@
 
 	svg {
 		width: 300px;
+
+		@include screenxs {
+			width: 150px;
+		}
 	}
 
 	h1 {
@@ -25,30 +29,45 @@
 		justify-content: space-between;
 		align-items: center;
 
+		@include screenxs {
+			flex-direction: column;
+		}
+
 		div {
 			margin: 0 10em;
+
 			.globe {
 				position: absolute;
 				z-index: -2;
 				transform: translateY(-150px) translateX(75px);
 				// animation: spinning infinite 5s ease-in-out;
+
+				@include screenxs {
+					transform: translateY(-80px) translateX(40px);
+				}
 			}
-			.jumping {
-			}
+
 			.heart {
 				width: 100px;
 				position: absolute;
 				z-index: -2;
 				transform: translateY(70px) translateX(15px);
+
+				@include screenxs {
+					width: 40px;
+					z-index: -1;
+					transform: translateY(50px) translateX(10px);
+				}
 			}
-			.mountains {
-			}
-			.hand {
-			}
+
 			.plants {
 				position: absolute;
 				z-index: -2;
 				transform: translateY(-120px) translateX(-210px);
+
+				@include screenxs {
+					transform: translateY(-100px) translateX(-90px);
+				}
 			}
 
 			@keyframes spinning {
@@ -63,15 +82,21 @@
 				}
 			}
 		}
+
 		span {
-			margin: 0 10em;
+			margin: 0;
 			font-size: $body2;
 			width: 100%;
+
+			@include screenxs {
+				width: 80%;
+				text-align: center;
+			}
 		}
 	}
 
 	.blob-left-1 {
-		z-index: -1;
+		z-index: -3;
 		position: absolute;
 		width: 200%;
 		left: -110%;

@@ -9,6 +9,10 @@
 	justify-content: center;
 	align-items: center;
 
+	@include screenxs {
+		margin-top: 0;
+	}
+
 	h1 {
 		font-size: $title;
 	}
@@ -17,6 +21,10 @@
 		text-align: center;
 		width: 40%;
 		font-size: $subheading;
+
+		@include screenxs {
+			width: 80%;
+		}
 	}
 
 	span {

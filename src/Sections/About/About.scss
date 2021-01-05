@@ -7,13 +7,26 @@
 	display: flex;
 	justify-content: space-between;
 
+	@include screenxs {
+		margin-top: 0em;
+
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+
 	.lady-kneeling {
 		width: 450px;
 		margin-left: 10em;
+
+		@include screenxs {
+			width: 350px;
+			margin: 0 auto;
+		}
 	}
 
 	.about-text {
 		width: 45%;
+
 		h1 {
 			font-size: $title;
 		}
@@ -21,6 +34,16 @@
 		p {
 			font-size: $body2;
 			width: 80%;
+
+			@include screenxs {
+				width: 100%;
+			}
+		}
+
+		@include screenxs {
+			width: 85%;
+			text-align: center;
+			margin: 0 auto;
 		}
 	}
 }

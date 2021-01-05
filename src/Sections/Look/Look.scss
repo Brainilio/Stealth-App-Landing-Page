@@ -9,9 +9,21 @@
 	align-items: flex-start;
 	justify-content: space-evenly;
 
+	@include screenxs {
+		margin-top: 15em;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
 	div {
 		h1 {
 			font-size: $title;
+
+			@include screenxs {
+				margin-bottom: 2em;
+				text-align: center;
+			}
 		}
 	}
 
@@ -20,5 +32,9 @@
 		right: 20%;
 		top: 30%;
 		width: 300px;
+
+		@include screenxs {
+			display: none;
+		}
 	}
 }

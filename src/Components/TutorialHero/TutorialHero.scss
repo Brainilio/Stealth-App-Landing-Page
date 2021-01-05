@@ -13,6 +13,12 @@
 	width: 80%;
 	border-radius: 15px;
 
+	@include screenxs {
+		width: 90%;
+		height: 800px auto;
+		flex-direction: column;
+	}
+
 	.how-it-works-hero-step {
 		display: flex;
 		flex-direction: column;
