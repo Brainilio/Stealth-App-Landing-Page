@@ -33,11 +33,24 @@
 			flex-direction: column;
 		}
 
+		@include screens {
+			margin-top: 0em;
+			flex-direction: column;
+		}
+
 		.product-itself {
 			.product-itself-guy {
 				width: 350px;
 
 				@include screenxs {
+					width: 250px;
+				}
+
+				@include screens {
+					width: 250px;
+				}
+
+				@include screenm {
 					width: 250px;
 				}
 			}
@@ -49,18 +62,43 @@
 				@include screenxs {
 					display: none;
 				}
+
+				@include screens {
+					display: none;
+				}
+				@include screenm {
+					display: none;
+				}
 			}
 			.cloud2 {
 				position: absolute;
 				transform: translateX(120px) translateY(50px);
+
 				@include screenxs {
+					display: none;
+				}
+
+				@include screens {
+					display: none;
+				}
+
+				@include screenm {
 					display: none;
 				}
 			}
 			.cloud3 {
 				position: absolute;
 				transform: translateX(20px) translateY(350px);
+
 				@include screenxs {
+					display: none;
+				}
+
+				@include screens {
+					display: none;
+				}
+
+				@include screenm {
 					display: none;
 				}
 			}
@@ -97,6 +135,14 @@
 				@include screenxs {
 					display: none;
 				}
+
+				@include screens {
+					display: none;
+				}
+
+				@include screenm {
+					display: none;
+				}
 			}
 		}
 	}
@@ -109,6 +155,14 @@
 		top: -100%;
 
 		@include screenxs {
+			display: none;
+		}
+
+		@include screens {
+			display: none;
+		}
+
+		@include screenm {
 			display: none;
 		}
 	}

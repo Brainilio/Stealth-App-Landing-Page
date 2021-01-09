@@ -16,12 +16,36 @@
 		align-items: center;
 	}
 
+	@include screens {
+		margin-top: 10em;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	@include screenm {
+		margin-top: 10em;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
 	div {
 		h1 {
 			font-size: $title;
 
 			@include screenxs {
 				margin-bottom: 2em;
+				text-align: center;
+			}
+
+			@include screens {
+				margin-bottom: 3em;
+				text-align: center;
+			}
+
+			@include screenm {
+				margin-bottom: 3em;
 				text-align: center;
 			}
 		}
@@ -35,6 +59,18 @@
 
 		@include screenxs {
 			display: none;
+		}
+
+		@include screens {
+			width: 200px;
+			right: 10%;
+			top: 80%;
+		}
+
+		@include screenm {
+			width: 200px;
+			right: 10%;
+			top: 90%;
 		}
 	}
 }

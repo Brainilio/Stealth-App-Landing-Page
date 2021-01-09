@@ -19,6 +19,16 @@
 		flex-direction: column;
 	}
 
+	@include screens {
+		width: 90%;
+		height: 800px auto;
+	}
+
+	@include screenm {
+		width: 95%;
+		height: 800px auto;
+	}
+
 	.how-it-works-hero-step {
 		display: flex;
 		flex-direction: column;

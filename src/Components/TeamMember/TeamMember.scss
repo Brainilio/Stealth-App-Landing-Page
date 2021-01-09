@@ -12,6 +12,14 @@
 		margin: 2em 5em;
 	}
 
+	@include screens {
+		margin: 2em 5em;
+	}
+
+	@include screenm {
+		margin: 0 auto;
+	}
+
 	div {
 		border-radius: 50%;
 		width: 150px;

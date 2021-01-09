@@ -10,6 +10,10 @@
 		margin-top: 10em;
 	}
 
+	@include screens {
+		margin-top: 25em;
+	}
+
 	h1 {
 		font-size: $title;
 		text-align: center;
@@ -22,6 +26,11 @@
 		align-items: center;
 
 		@include screenxs {
+			flex-direction: column;
+			margin-top: 5em;
+		}
+
+		@include screens {
 			flex-direction: column;
 			margin-top: 5em;
 		}

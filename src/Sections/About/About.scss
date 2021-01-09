@@ -9,7 +9,18 @@
 
 	@include screenxs {
 		margin-top: 0em;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
 
+	@include screens {
+		margin-top: 0em;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+
+	@include screenm {
+		margin-top: 0em;
 		align-items: center;
 		flex-direction: column-reverse;
 	}
@@ -20,6 +31,16 @@
 
 		@include screenxs {
 			width: 350px;
+			margin: 0 auto;
+		}
+
+		@include screens {
+			width: 350px;
+			margin: 0 auto;
+		}
+
+		@include screenm {
+			width: 400px;
 			margin: 0 auto;
 		}
 	}
@@ -38,9 +59,29 @@
 			@include screenxs {
 				width: 100%;
 			}
+
+			@include screens {
+				width: 100%;
+			}
+
+			@include screenm {
+				width: 100%;
+			}
 		}
 
 		@include screenxs {
+			width: 85%;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		@include screens {
+			width: 85%;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		@include screenm {
 			width: 85%;
 			text-align: center;
 			margin: 0 auto;

@@ -13,6 +13,14 @@
 		margin-top: 0;
 	}
 
+	@include screens {
+		margin-top: 0;
+	}
+
+	@include screenm {
+		margin-top: 0;
+	}
+
 	h1 {
 		font-size: $title;
 	}
@@ -23,6 +31,13 @@
 		font-size: $subheading;
 
 		@include screenxs {
+			width: 80%;
+		}
+
+		@include screens {
+			width: 80%;
+		}
+		@include screenm {
 			width: 80%;
 		}
 	}

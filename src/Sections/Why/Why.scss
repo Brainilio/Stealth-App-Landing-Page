@@ -15,6 +15,14 @@
 		@include screenxs {
 			width: 150px;
 		}
+
+		@include screens {
+			width: 150px;
+		}
+
+		@include screenm {
+			width: 200px;
+		}
 	}
 
 	h1 {
@@ -36,14 +44,29 @@
 		div {
 			margin: 0 10em;
 
+			@include screens {
+				margin: 0 auto;
+			}
+
+			@include screenm {
+				margin: 0 auto;
+			}
+
 			.globe {
 				position: absolute;
 				z-index: -2;
 				transform: translateY(-150px) translateX(75px);
-				// animation: spinning infinite 5s ease-in-out;
 
 				@include screenxs {
 					transform: translateY(-80px) translateX(40px);
+				}
+
+				@include screens {
+					transform: translateY(-80px) translateX(40px);
+				}
+
+				@include screenm {
+					transform: translateY(-110px) translateX(45px);
 				}
 			}
 
@@ -58,6 +81,18 @@
 					z-index: -1;
 					transform: translateY(50px) translateX(10px);
 				}
+
+				@include screens {
+					width: 40px;
+					z-index: -1;
+					transform: translateY(50px) translateX(10px);
+				}
+
+				@include screenm {
+					width: 40px;
+					z-index: -1;
+					transform: translateY(50px) translateX(20px);
+				}
 			}
 
 			.plants {
@@ -67,6 +102,14 @@
 
 				@include screenxs {
 					transform: translateY(-100px) translateX(-90px);
+				}
+
+				@include screens {
+					transform: translateY(-100px) translateX(-90px);
+				}
+
+				@include screenm {
+					transform: translateY(-100px) translateX(-120px);
 				}
 			}
 
@@ -90,6 +133,16 @@
 
 			@include screenxs {
 				width: 80%;
+				text-align: center;
+			}
+
+			@include screens {
+				width: 50%;
+				text-align: center;
+			}
+
+			@include screenm {
+				width: 50%;
 				text-align: center;
 			}
 		}

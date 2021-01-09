@@ -12,6 +12,16 @@
 		flex-direction: column;
 	}
 
+	@include screens {
+		margin-top: 10em;
+		flex-direction: column;
+	}
+
+	@include screenm {
+		margin-top: 15em;
+		flex-direction: column;
+	}
+
 	p {
 		margin-left: 10em;
 		font-size: $subheading;
@@ -19,6 +29,16 @@
 		text-align: center;
 
 		@include screenxs {
+			width: 80%;
+			margin: 0;
+		}
+
+		@include screens {
+			width: 80%;
+			margin: 0;
+		}
+
+		@include screenm {
 			width: 80%;
 			margin: 0;
 		}
