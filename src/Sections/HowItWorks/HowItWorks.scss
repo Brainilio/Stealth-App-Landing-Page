@@ -21,6 +21,10 @@
 		margin-top: 0;
 	}
 
+	@include screenl {
+		margin-top: 3em;
+	}
+
 	h1 {
 		font-size: $title;
 	}
@@ -39,6 +43,10 @@
 		}
 		@include screenm {
 			width: 80%;
+		}
+
+		@include screenl {
+			width: 70%;
 		}
 	}
 

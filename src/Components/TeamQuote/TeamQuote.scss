@@ -22,6 +22,11 @@
 		flex-direction: column;
 	}
 
+	@include screenl {
+		margin-top: 15em;
+		flex-direction: column;
+	}
+
 	p {
 		margin-left: 10em;
 		font-size: $subheading;
@@ -39,6 +44,11 @@
 		}
 
 		@include screenm {
+			width: 80%;
+			margin: 0;
+		}
+
+		@include screenl {
 			width: 80%;
 			margin: 0;
 		}

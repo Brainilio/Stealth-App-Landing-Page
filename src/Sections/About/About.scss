@@ -25,6 +25,10 @@
 		flex-direction: column-reverse;
 	}
 
+	@include screenl {
+		margin-top: 12em;
+	}
+
 	.lady-kneeling {
 		width: 450px;
 		margin-left: 10em;
@@ -41,6 +45,11 @@
 
 		@include screenm {
 			width: 400px;
+			margin: 0 auto;
+		}
+
+		@include screenl {
+			width: 300px;
 			margin: 0 auto;
 		}
 	}

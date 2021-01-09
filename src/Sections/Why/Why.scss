@@ -23,6 +23,10 @@
 		@include screenm {
 			width: 200px;
 		}
+
+		@include screenl {
+			width: 300px;
+		}
 	}
 
 	h1 {
@@ -49,6 +53,10 @@
 			}
 
 			@include screenm {
+				margin: 0 auto;
+			}
+
+			@include screenl {
 				margin: 0 auto;
 			}
 
@@ -142,6 +150,11 @@
 			}
 
 			@include screenm {
+				width: 50%;
+				text-align: center;
+			}
+
+			@include screenl {
 				width: 50%;
 				text-align: center;
 			}

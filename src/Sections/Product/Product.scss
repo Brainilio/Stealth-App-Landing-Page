@@ -69,6 +69,11 @@
 				@include screenm {
 					display: none;
 				}
+
+				@include screenl {
+					width: 100px;
+					transform: translateX(-300px);
+				}
 			}
 			.cloud2 {
 				position: absolute;
@@ -85,6 +90,11 @@
 				@include screenm {
 					display: none;
 				}
+
+				@include screenl {
+					width: 100px;
+					transform: translateX(40px) translateY(50px);
+				}
 			}
 			.cloud3 {
 				position: absolute;
@@ -100,6 +110,11 @@
 
 				@include screenm {
 					display: none;
+				}
+
+				@include screenl {
+					width: 100px;
+					transform: translateX(20px) translateY(350px);
 				}
 			}
 		}
@@ -143,6 +158,10 @@
 				@include screenm {
 					display: none;
 				}
+
+				@include screenl {
+					display: none;
+				}
 			}
 		}
 	}
@@ -163,6 +182,10 @@
 		}
 
 		@include screenm {
+			display: none;
+		}
+
+		@include screenl {
 			display: none;
 		}
 	}

@@ -30,6 +30,13 @@
 		align-items: center;
 	}
 
+	@include screenl {
+		margin-top: 10em;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
 	div {
 		h1 {
 			font-size: $title;
@@ -45,6 +52,11 @@
 			}
 
 			@include screenm {
+				margin-bottom: 3em;
+				text-align: center;
+			}
+
+			@include screenl {
 				margin-bottom: 3em;
 				text-align: center;
 			}
@@ -68,6 +80,12 @@
 		}
 
 		@include screenm {
+			width: 200px;
+			right: 10%;
+			top: 90%;
+		}
+
+		@include screenl {
 			width: 200px;
 			right: 10%;
 			top: 90%;
