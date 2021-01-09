@@ -8,6 +8,10 @@
 	align-items: center;
 	margin: 0 5em;
 
+	@include screenxs {
+		margin: 2em 5em;
+	}
+
 	div {
 		border-radius: 50%;
 		width: 150px;

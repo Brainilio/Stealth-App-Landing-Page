@@ -8,14 +8,28 @@
 	justify-content: center;
 	align-items: center;
 
+	@include screenxs {
+		flex-direction: column;
+	}
+
 	p {
 		margin-left: 10em;
 		font-size: $subheading;
 		width: 70%;
 		text-align: center;
+
+		@include screenxs {
+			width: 80%;
+			margin: 0;
+		}
 	}
+
 	.team-members {
 		width: 100%;
 		transform: translateX(30%);
+
+		@include screenxs {
+			transform: translateX(30%) translateY(-30%);
+		}
 	}
 }

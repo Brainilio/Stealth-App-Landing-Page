@@ -8,6 +8,9 @@
 	position: relative;
 	overflow-y: hidden;
 
+	@include screenxs {
+	}
+
 	.product-title {
 		text-align: center;
 		h1 {
@@ -25,22 +28,41 @@
 		justify-content: space-around;
 		position: relative;
 
+		@include screenxs {
+			margin-top: 0em;
+			flex-direction: column;
+		}
+
 		.product-itself {
 			.product-itself-guy {
 				width: 350px;
+
+				@include screenxs {
+					width: 250px;
+				}
 			}
 
 			.cloud1 {
 				position: absolute;
 				transform: translateX(-500px);
+
+				@include screenxs {
+					display: none;
+				}
 			}
 			.cloud2 {
 				position: absolute;
 				transform: translateX(120px) translateY(50px);
+				@include screenxs {
+					display: none;
+				}
 			}
 			.cloud3 {
 				position: absolute;
 				transform: translateX(20px) translateY(350px);
+				@include screenxs {
+					display: none;
+				}
 			}
 		}
 
@@ -71,6 +93,10 @@
 				position: absolute;
 				width: 200px;
 				transform: translateY(150%) translateX(-80%);
+
+				@include screenxs {
+					display: none;
+				}
 			}
 		}
 	}
@@ -81,5 +107,9 @@
 		position: absolute;
 		left: -20%;
 		top: -100%;
+
+		@include screenxs {
+			display: none;
+		}
 	}
 }

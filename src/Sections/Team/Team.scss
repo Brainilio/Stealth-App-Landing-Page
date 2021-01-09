@@ -3,7 +3,12 @@
 @import "../../Styles/fontsizes.scss";
 
 .team {
+	width: 100vw;
 	margin-top: 25em;
+
+	@include screenxs {
+		margin-top: 10em;
+	}
 
 	h1 {
 		font-size: $title;
@@ -15,5 +20,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@include screenxs {
+			flex-direction: column;
+			margin-top: 5em;
+		}
 	}
 }
