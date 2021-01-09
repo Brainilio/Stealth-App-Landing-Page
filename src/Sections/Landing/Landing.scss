@@ -35,6 +35,11 @@
 		align-items: center;
 	}
 
+	@include screenxl {
+		justify-content: center;
+		align-items: center;
+	}
+
 	.landing-text {
 		@include screenxs {
 			margin: 0 auto;
@@ -52,6 +57,11 @@
 		}
 
 		@include screenl {
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		@include screenxl {
 			margin: 0 auto;
 			text-align: center;
 		}
@@ -82,6 +92,12 @@
 			}
 
 			@include screenl {
+				margin: 0 auto;
+				margin-bottom: 2em;
+				text-align: center;
+			}
+
+			@include screenxl {
 				margin: 0 auto;
 				margin-bottom: 2em;
 				text-align: center;
@@ -125,6 +141,11 @@
 		@include screenl {
 			overflow-x: hidden;
 			top: -520px;
+		}
+
+		@include screenxl {
+			overflow-x: hidden;
+			top: -320px;
 		}
 	}
 }

@@ -162,6 +162,10 @@
 				@include screenl {
 					display: none;
 				}
+
+				@include screenxl {
+					display: none;
+				}
 			}
 		}
 	}
@@ -187,6 +191,10 @@
 
 		@include screenl {
 			display: none;
+		}
+
+		@include screenxl {
+			left: -30%;
 		}
 	}
 }

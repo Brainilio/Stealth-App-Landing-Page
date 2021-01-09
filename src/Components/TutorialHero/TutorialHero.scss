@@ -34,6 +34,11 @@
 		height: 800px auto;
 	}
 
+	@include screenxl {
+		width: 95%;
+		height: 800px auto;
+	}
+
 	.how-it-works-hero-step {
 		display: flex;
 		flex-direction: column;

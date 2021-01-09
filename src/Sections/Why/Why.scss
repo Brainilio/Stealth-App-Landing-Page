@@ -158,6 +158,11 @@
 				width: 50%;
 				text-align: center;
 			}
+
+			@include screenxl {
+				width: 50%;
+				text-align: center;
+			}
 		}
 	}
 

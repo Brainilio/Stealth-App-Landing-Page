@@ -29,6 +29,10 @@
 		margin-top: 12em;
 	}
 
+	@include screenxl {
+		margin-top: 25em;
+	}
+
 	.lady-kneeling {
 		width: 450px;
 		margin-left: 10em;
@@ -49,6 +53,11 @@
 		}
 
 		@include screenl {
+			width: 300px;
+			margin: 0 auto;
+		}
+
+		@include screenxl {
 			width: 300px;
 			margin: 0 auto;
 		}

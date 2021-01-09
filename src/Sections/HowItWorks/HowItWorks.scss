@@ -48,6 +48,10 @@
 		@include screenl {
 			width: 70%;
 		}
+
+		@include screenxl {
+			width: 70%;
+		}
 	}
 
 	span {
