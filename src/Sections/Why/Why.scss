@@ -10,7 +10,7 @@
 	position: relative;
 
 	svg {
-		width: 300px;
+		width: 250px;
 
 		@include screenxs {
 			width: 150px;
@@ -35,19 +35,25 @@
 	}
 
 	.why-reason {
-		margin-top: 10em;
 		position: relative;
+		width: 50% auto;
+		height: 350px;
+		background-color: white;
+		border-radius: 18px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.144);
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		z-index: 0;
 
 		@include screenxs {
 			flex-direction: column;
 		}
 
-		div {
-			margin: 0 10em;
+		@include screens {
+			flex-direction: column;
+		}
 
+		div {
 			@include screens {
 				margin: 0 auto;
 			}
@@ -61,9 +67,10 @@
 			}
 
 			.globe {
-				position: absolute;
+				position: relative;
 				z-index: -2;
-				transform: translateY(-150px) translateX(75px);
+				width: 200px;
+				transform: translateY(-110px) translateX(280px);
 
 				@include screenxs {
 					transform: translateY(400px) translateX(40px);
@@ -97,9 +104,9 @@
 				}
 
 				@include screenm {
-					width: 40px;
+					width: 50px;
 					z-index: -1;
-					transform: translateY(50px) translateX(20px);
+					transform: translateY(50px) translateX(30px);
 				}
 			}
 
@@ -117,7 +124,7 @@
 				}
 
 				@include screenm {
-					transform: translateY(-100px) translateX(-120px);
+					transform: translateY(-120px) translateX(-200px);
 				}
 			}
 
@@ -135,9 +142,9 @@
 		}
 
 		span {
-			margin: 0;
+			margin: 0 auto;
 			font-size: $body2;
-			width: 100%;
+			width: 45%;
 
 			@include screenxs {
 				width: 80%;

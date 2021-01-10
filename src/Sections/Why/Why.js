@@ -7,11 +7,12 @@ import { ReactComponent as Mountains } from "../../Media/Svgs/mountains.svg"
 import { ReactComponent as Plants } from "../../Media/Svgs/plant.svg"
 import { ReactComponent as Hand } from "../../Media/Svgs/hand.svg"
 import { ReactComponent as Blob } from "../../Media/Svgs/blob-left-1.svg"
+import Title from "../../UI/Title/Title"
 
 const Why = () => {
 	return (
 		<section className="why">
-			<h1>Why?</h1>
+			<Title>Why?</Title>
 			<div className="why-reason">
 				<div>
 					<Globe className="globe" />
@@ -23,14 +24,14 @@ const Why = () => {
 				</span>
 			</div>
 			<div className="why-reason">
-				<span>
-					Reason #1 for using this application and supporting motive to this
-					argument.
-				</span>
 				<div>
 					<Heart className="heart" />
 					<Mountains className="mountains" />
 				</div>
+				<span>
+					Reason #1 for using this application and supporting motive to this
+					argument.
+				</span>
 			</div>
 			<div className="why-reason">
 				<div>

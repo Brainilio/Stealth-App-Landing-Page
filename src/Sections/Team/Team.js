@@ -1,11 +1,12 @@
 import React from "react"
 import TeamMember from "../../Components/TeamMember/TeamMember"
+import Title from "../../UI/Title/Title"
 import "./Team.scss"
 
 const Team = () => {
 	return (
 		<section className="team">
-			<h1>Meet the team</h1>
+			<Title>Meet the team</Title>
 			<div className="team-wrapper">
 				<TeamMember />
 				<TeamMember />

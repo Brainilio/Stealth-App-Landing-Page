@@ -1,6 +1,7 @@
 import React from "react"
 import "./About.scss"
 import { ReactComponent as LadyKneeling } from "../../Media/Svgs/lady-kneeling.svg"
+import Title from "../../UI/Title/Title"
 
 const About = () => {
 	return (
@@ -8,7 +9,7 @@ const About = () => {
 			<LadyKneeling className="lady-kneeling" />
 
 			<div className="about-text">
-				<h1>About</h1>
+				<Title>About</Title>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
 					blandit in erat id sollicitudin. Maecenas non quam non tortor congue

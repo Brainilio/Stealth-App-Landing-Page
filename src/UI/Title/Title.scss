@@ -1,0 +1,16 @@
+.common-header {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
+.common-header::after {
+	content: "";
+	height: 50%;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	background: #c7efdb;
+	z-index: -1;
+}

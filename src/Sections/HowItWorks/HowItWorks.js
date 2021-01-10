@@ -2,12 +2,12 @@ import React from "react"
 import TutorialHero from "../../Components/TutorialHero/TutorialHero"
 import "./HowItWorks.scss"
 import { ReactComponent as Group } from "../../Media/Svgs/group-community.svg"
+import Title from "../../UI/Title/Title"
 
 const HowItWorks = () => {
 	return (
 		<section className="how-it-works">
-			<h1>How it works</h1>
-
+			<Title>How it works</Title>
 			<p>
 				“The greatest threat to our planet is the belief that someone else will
 				save it.”

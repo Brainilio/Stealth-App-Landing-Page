@@ -4,12 +4,13 @@ import { ReactComponent as Blob } from "../../Media/Svgs/blob-left-2.svg"
 import { ReactComponent as CloudOne } from "../../Media/Svgs/cloud.svg"
 import { ReactComponent as ProductDisplay } from "../../Media/Svgs/guy-looking-at-app.svg"
 import { ReactComponent as Buildings } from "../../Media/Svgs/buildings.svg"
+import Title from "../../UI/Title/Title"
 
 const Product = () => {
 	return (
 		<section className="product">
 			<div className="product-title">
-				<h1>COMING SOON</h1>
+				<Title>COMING SOON</Title>
 				<h2>Don’t wait on anyone. Make the difference.</h2>
 			</div>
 
@@ -28,8 +29,6 @@ const Product = () => {
 						updates!
 					</p>
 					<button>Subscribe</button>
-
-					<Buildings className="product-container-image" />
 				</div>
 			</div>
 

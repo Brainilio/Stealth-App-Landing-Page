@@ -1,6 +1,7 @@
 import React from "react"
 import Video from "../../Components/Video/Video"
 import { ReactComponent as Person } from "../../Media/Svgs/teacher.svg"
+import Title from "../../UI/Title/Title"
 import "./Look.scss"
 
 const Look = () => {
@@ -8,7 +9,7 @@ const Look = () => {
 		<section className="look">
 			<Video />
 			<div>
-				<h1>Let's take a look</h1>
+				<Title>Let's take a look</Title>
 			</div>
 			<Person className="teacher" />
 		</section>
