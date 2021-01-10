@@ -66,7 +66,7 @@
 				transform: translateY(-150px) translateX(75px);
 
 				@include screenxs {
-					transform: translateY(-80px) translateX(40px);
+					transform: translateY(400px) translateX(40px);
 				}
 
 				@include screens {
@@ -74,7 +74,7 @@
 				}
 
 				@include screenm {
-					transform: translateY(-110px) translateX(45px);
+					transform: translateY(-150px) translateX(80px);
 				}
 			}
 
@@ -85,7 +85,7 @@
 				transform: translateY(70px) translateX(15px);
 
 				@include screenxs {
-					width: 40px;
+					width: 50px;
 					z-index: -1;
 					transform: translateY(50px) translateX(10px);
 				}
