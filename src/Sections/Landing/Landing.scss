@@ -41,6 +41,9 @@
 	}
 
 	.landing-text {
+		margin: 0 auto;
+		margin: 2em;
+
 		@include screenxs {
 			margin: 0 auto;
 			text-align: center;
@@ -52,17 +55,17 @@
 		}
 
 		@include screenm {
-			margin: 0 auto;
+			margin: 0 2em;
 			text-align: center;
 		}
 
 		@include screenl {
-			margin: 0 auto;
+			margin: 0 2em;
 			text-align: center;
 		}
 
 		@include screenxl {
-			margin: 0 auto;
+			margin: 0 2em;
 			text-align: center;
 		}
 

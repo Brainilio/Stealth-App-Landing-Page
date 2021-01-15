@@ -56,6 +56,7 @@
 			}
 
 			.cloud1 {
+				z-index: -2;
 				position: absolute;
 				transform: translateX(-500px);
 
@@ -78,6 +79,7 @@
 			.cloud2 {
 				position: absolute;
 				transform: translateX(120px) translateY(50px);
+				z-index: -2;
 
 				@include screenxs {
 					display: none;
@@ -97,6 +99,7 @@
 				}
 			}
 			.cloud3 {
+				z-index: -2;
 				position: absolute;
 				transform: translateX(20px) translateY(350px);
 

@@ -36,24 +36,99 @@
 
 	.why-reason {
 		position: relative;
-		width: 50% auto;
+		width: 50%;
 		height: 350px;
-		background-color: white;
+		background-color: #dbf0e1;
+		margin: 3em auto;
 		border-radius: 18px;
-		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.144);
 		display: flex;
 		align-items: center;
 		z-index: 0;
+		transform: translateX(-190px);
+		box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2);
+
+		&:nth-child(3) {
+			transform: translateX(0);
+
+			@include screenxxs {
+				transform: translateX(0);
+			}
+
+			@include screenxs {
+				transform: translateX(0);
+			}
+
+			@include screens {
+				transform: translateX(0);
+			}
+
+			@include screenm {
+				transform: translateX(0);
+			}
+
+			@include screenl {
+				transform: translateX(0);
+			}
+		}
+
+		&:nth-child(4) {
+			transform: translateX(190px);
+
+			@include screenxxs {
+				transform: translateX(0);
+			}
+
+			@include screenxs {
+				transform: translateX(0);
+			}
+
+			@include screens {
+				transform: translateX(0);
+			}
+
+			@include screenm {
+				transform: translateX(0);
+			}
+
+			@include screenl {
+				transform: translateX(0);
+			}
+		}
+
+		@include screenxxs {
+			flex-direction: column;
+			height: auto;
+			width: 90%;
+			transform: translateX(0);
+		}
 
 		@include screenxs {
 			flex-direction: column;
+			height: auto;
+			width: 90%;
+			transform: translateX(0);
 		}
 
 		@include screens {
 			flex-direction: column;
+			height: auto;
+			width: 90%;
+			transform: translateX(0);
+		}
+
+		@include screenm {
+			width: 90%;
+			transform: translateX(0);
+		}
+
+		@include screenl {
+			width: 90%;
+			transform: translateX(0);
 		}
 
 		div {
+			margin: 0 auto;
+
 			@include screens {
 				margin: 0 auto;
 			}
@@ -65,84 +140,10 @@
 			@include screenl {
 				margin: 0 auto;
 			}
-
-			.globe {
-				position: relative;
-				z-index: -2;
-				width: 200px;
-				transform: translateY(-110px) translateX(280px);
-
-				@include screenxs {
-					transform: translateY(400px) translateX(40px);
-				}
-
-				@include screens {
-					transform: translateY(-80px) translateX(40px);
-				}
-
-				@include screenm {
-					transform: translateY(-150px) translateX(80px);
-				}
-			}
-
-			.heart {
-				width: 100px;
-				position: absolute;
-				z-index: -2;
-				transform: translateY(70px) translateX(15px);
-
-				@include screenxs {
-					width: 50px;
-					z-index: -1;
-					transform: translateY(50px) translateX(10px);
-				}
-
-				@include screens {
-					width: 40px;
-					z-index: -1;
-					transform: translateY(50px) translateX(10px);
-				}
-
-				@include screenm {
-					width: 50px;
-					z-index: -1;
-					transform: translateY(50px) translateX(30px);
-				}
-			}
-
-			.plants {
-				position: absolute;
-				z-index: -2;
-				transform: translateY(-120px) translateX(-210px);
-
-				@include screenxs {
-					transform: translateY(-100px) translateX(-90px);
-				}
-
-				@include screens {
-					transform: translateY(-100px) translateX(-90px);
-				}
-
-				@include screenm {
-					transform: translateY(-120px) translateX(-200px);
-				}
-			}
-
-			@keyframes spinning {
-				0% {
-					transform: rotate(0deg);
-				}
-				50% {
-					transform: rotate(180deg);
-				}
-				100% {
-					transform: rotate(360deg);
-				}
-			}
 		}
 
 		span {
-			margin: 0 auto;
+			margin: 2em auto;
 			font-size: $body2;
 			width: 45%;
 
@@ -178,6 +179,72 @@
 		position: absolute;
 		width: 200%;
 		left: -110%;
-		top: -30%;
+		top: 20%;
+
+		@include screenxxs {
+			display: none;
+		}
+
+		@include screenxs {
+			display: none;
+		}
+
+		@include screens {
+			display: none;
+		}
+
+		@include screenm {
+			display: none;
+		}
+
+		@include screenl {
+			display: none;
+		}
+	}
+}
+
+//Animations
+
+#Heart {
+	animation: pulsing 1s infinite;
+	transform-origin: center;
+}
+
+#Globe {
+	animation: spinning 5s infinite linear;
+	transform-origin: center;
+	transform-box: fill-box;
+	animation: name duration timing-function delay iteration-count direction
+		fill-mode;
+}
+
+#Plants {
+	animation: growing 2s infinite 8s;
+	transform-origin: bottom;
+	transform-box: fill-box;
+}
+
+@keyframes spinning {
+	from {
+		transform: rotateZ(0deg);
+	}
+
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes pulsing {
+	10% {
+		transform: scale(1.05);
+	}
+}
+
+@keyframes growing {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
 	}
 }
